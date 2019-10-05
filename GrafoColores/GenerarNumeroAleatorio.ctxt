@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=GenerarNumeroAleatorio
+comment1.params=numero
+comment1.target=int\ numeroRandom(int)
+numComments=2
