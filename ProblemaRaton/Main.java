@@ -1,5 +1,5 @@
 
-public class Comparacion{
+public class Main{
     private static RatonBFS mbfs = new RatonBFS();
     private static RatonDFS mdfs = new RatonDFS();
     public static void main(String [] args){

@@ -13,7 +13,7 @@ public class GrafoColores {
     
     private ArrayList<char[][]> coleccionDeMapasAnchura, coleccionDeMapaProfundidad;
     private ArrayList<Integer> rangos;
-    private int tamaño, posicion;
+    private int tamanio, posicion;
     
     private GenerarNumeroAleatorio random;
     public GrafoColores(GenerarMapaColoreado mapa){
@@ -43,12 +43,12 @@ public class GrafoColores {
         boolean res=false;
         coleccionDeMapasAnchura.clear();
         res=prueba(auxiliar);
-        tamaño=coleccionDeMapasAnchura.size();
-        rangos.add(tamaño);
+        tamanio=coleccionDeMapasAnchura.size();
+        rangos.add(tamanio);
         for(int i=0; i<coleccionDeMapasAnchura.size() && res==true;i++){
-            if(i==tamaño-1){
-                tamaño=coleccionDeMapasAnchura.size();
-                rangos.add(tamaño);
+            if(i==tamanio-1){
+                tamanio=coleccionDeMapasAnchura.size();
+                rangos.add(tamanio);
             }
             auxiliar = coleccionDeMapasAnchura.get(i);
             res=prueba(auxiliar);            
@@ -63,7 +63,7 @@ public class GrafoColores {
         coleccionDeMapasAnchura.clear();
         res=prueba(auxiliar);
         for(int i=0; i<coleccionDeMapasAnchura.size() && res==true;i++){
-            tamaño=coleccionDeMapasAnchura.size();
+            tamanio=coleccionDeMapasAnchura.size();
             if(i==0){
                 auxiliar = coleccionDeMapasAnchura.get(i);
                 coleccionDeMapaProfundidad.add(copia(auxiliar));

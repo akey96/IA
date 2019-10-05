@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Tabla
-comment1.params=fila\ columna
-comment1.target=Tabla(int,\ int)
-comment2.params=
-comment2.target=void\ inicializar()
-comment3.params=
-comment3.target=char[][]\ getMapa()
-numComments=4
