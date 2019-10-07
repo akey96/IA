@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 class Common:
+    
+    def __init__(self):
+        self.cost = 0
 
     def printMaze(self, maze, path=""):
         for x, pos in enumerate(maze[0]):
@@ -32,7 +35,8 @@ class Common:
                 else:
                     print('{0: ^4}'.format(col), end="")
             print()
-            
+        print('costo: {0: ^4}'.format(self.cost), end="")
+
 
 
     def valid(self, maze, moves):
@@ -63,6 +67,7 @@ class Common:
         return True
 
     def findEnd(self, maze, moves):
+        
         for x, pos in enumerate(maze[0]):
             if pos == "X":
                 start = x

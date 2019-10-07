@@ -5,7 +5,10 @@ import queue
 from common import Common
 
 class FirstTheBest(Common):
-
+    
+    def __init__(self):
+        super().__init__()
+    
     def best(self, maze, moves):
 
         for x, pos in enumerate(maze[0]):
@@ -60,12 +63,18 @@ class FirstTheBest(Common):
         return maze
 
     def search(self, maze):
+
+        
         nums = queue.Queue()
         nums.put("")
         add = ""
 
-        while not self.findEnd(maze, add):
+        self.printMaze(maze, add)
 
+
+        self.cost = 0
+        while not self.findEnd(maze, add):
+            self.cost += 1
             costo = set()
             add = nums.get()
             for j in ["L", "R", "U", "D"]:        
