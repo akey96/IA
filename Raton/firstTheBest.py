@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import queue
 from common import Common
 
 class FirstTheBest(Common):
@@ -58,5 +59,25 @@ class FirstTheBest(Common):
 
         return maze
 
+    def search(self, maze):
+        nums = queue.Queue()
+        nums.put("")
+        add = ""
 
+        while not self.findEnd(maze, add):
 
+            costo = set()
+            add = nums.get()
+            for j in ["L", "R", "U", "D"]:        
+                put = add + j
+                if self.valid(maze, put):          
+                    costo.add( (self.best(maze, put), put))
+            
+            costo = list(costo)
+            costo2 = []
+            for x in costo:
+                if not x[0] == 'X':
+                    costo2.append((int(x[0]), x[1]))
+            costo2.sort(key=lambda val: val[0])
+            for nodo in costo2:
+                nums.put(nodo[1])
