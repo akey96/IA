@@ -25,8 +25,7 @@ Abrir una terminal ya sea en linux o windows y escribir los siguiente comandos
 
 ## Raton
 
-`cd ProblemaRaton`
+`cd Raton`
 
-`javac Main.java`
+`python3 main.py`
 
-`java Main`
