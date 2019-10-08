@@ -68,14 +68,13 @@ class FirstOnBreadth(Common):
                 else:
                     print('{0: ^2}'.format(col), end="")
             print()
-        print('costo: {0: ^2}'.format(self.cost), end="")
-
+        print('costo: {0: ^2}'.format(self.cost))
     def search(self, maze):
-        
+
         nums = queue.Queue()
         nums.put("")
         add = ""
-
+        print("\nE(x) = Estado inicial del Laberinto\n")
         self.printMaze(maze, add)
 
         self.cost = 0

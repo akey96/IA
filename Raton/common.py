@@ -35,7 +35,7 @@ class Common:
                 else:
                     print('{0: ^4}'.format(col), end="")
             print()
-        print('costo: {0: ^4}'.format(self.cost), end="")
+        print('costo: {0: ^4}'.format(self.cost))
 
 
 
@@ -88,7 +88,10 @@ class Common:
                 j += 1
 
         if maze[j][i] == "0":
-            print("Found: " + moves)
+
+            print("\n\nS(x) = Found: " + moves)
+
+            print("\nPM = Punto Meta\n")
             self.printMaze(maze, moves)
             return True
 

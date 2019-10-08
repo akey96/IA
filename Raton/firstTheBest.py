@@ -68,25 +68,25 @@ class FirstTheBest(Common):
         nums = queue.Queue()
         nums.put("")
         add = ""
-
+        print("\nE(x) = Estado inicial del Laberinto\n")
         self.printMaze(maze, add)
 
 
         self.cost = 0
         while not self.findEnd(maze, add):
             self.cost += 1
-            costo = set()
+            cost_matriz = set()
             add = nums.get()
             for j in ["L", "R", "U", "D"]:        
                 put = add + j
                 if self.valid(maze, put):          
-                    costo.add( (self.best(maze, put), put))
+                    cost_matriz.add( (self.best(maze, put), put))
             
-            costo = list(costo)
-            costo2 = []
-            for x in costo:
+            cost_matriz = list(cost_matriz)
+            cost_matriz_aux = []
+            for x in cost_matriz:
                 if not x[0] == 'X':
-                    costo2.append((int(x[0]), x[1]))
-            costo2.sort(key=lambda val: val[0])
-            for nodo in costo2:
+                    cost_matriz_aux.append((int(x[0]), x[1]))
+            cost_matriz_aux.sort(key=lambda val: val[0])
+            for nodo in cost_matriz_aux:
                 nums.put(nodo[1])
