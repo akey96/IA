@@ -3,6 +3,7 @@ INTELIGENCIA ARTIFICIAL I
 ------------------------------------------------------------------------
 
 PROJECT TITLE: Practica Primer Parcial IA
+
 PURPOSE OF PROJECT: Comparar el resultado de dos metodologias de busqueda
 
 Se tiene la comparacion de las Metodologias de:
@@ -17,7 +18,7 @@ Abrir una terminal ya sea en linux o windows y escribir los siguiente comandos
 `git clone https://github.com/akey96/IA.git`
 
 ## Grafo Colores
-`cd GrafoColores`
+`cd XXX_DIR`
 
 `javac Main.java`
 
