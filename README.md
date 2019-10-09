@@ -1,32 +1,89 @@
-------------------------------------------------------------------------
-INTELIGENCIA ARTIFICIAL I
-------------------------------------------------------------------------
+# Niño Mensajero
 
-PROJECT TITLE: Practica Primer Parcial IA
+## Comenzando 🚀
 
-PURPOSE OF PROJECT: Comparar el resultado de dos metodologias de busqueda
+Descargar el codigo fuente de los repositorios de gitlab
 
-Se tiene la comparacion de las Metodologias de:
+```
+git clone https://gitlab.com/lurianne/el_nino_mensajero.git
+```
 
-- Busqueda por Anchura, elaborada con BFS(Breadth First Search), y la 
-- Busqueda por Profundidad, elaborada con DFS(Depth First Search).
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-USER INSTRUCTIONS:
 
-Abrir una terminal ya sea en linux o windows y escribir los siguiente comandos
+### Pre-requisitos 📋
 
-`git clone https://github.com/akey96/IA.git`
+Tener instalado:
+- Java 1.8
+- gradle
+- Postgres
+- Angular CLI
 
-## Grafo Colores
-`cd XXX_DIR`
+La base de datos configurada con:
+```
+USER=lirium
+PASSWORD=Lirium123
+DATABASE=ninio_mensajero
+PORT=5432
+```
 
-`javac Main.java`
+### Instalación 🔧
 
-`java Main`
+#### Backend-server
+Ingrese a la carpeta ninio_mensajero
+```
+cd ninio_mensajero
+```
+compilamos el proyecto con gradle
+```
+gradle build
+```
 
-## Raton
+levantamos el servidor en ambiente de desarrollo
+```
+gradle bootRun
+```
 
-`cd Raton`
+#### Client Angular
+Ingrese a la carpeta el-ninio-mensajero-ui
 
-`python3 main.py`
+```
+cd el-ninio-mensajero-ui
+```
 
+instalamos las dependencias con npm
+```
+npm install
+```
+
+levantamos el servidor  de angular para ambiente de desarrollo
+```
+ng serve
+```
+
+ingresamos con un navegador a la url:
+```
+http://localhost:4200
+```
+
+## Deployment 📦
+
+....
+
+
+## Wiki 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://gitlab.com/lurianne/el_nino_mensajero/wikis/home)
+
+
+## Autores ✒️
+
+* **Alvaro Yapu Cossio** - *Reseach,Desarrollo* 
+* **Gabriela Nataly Torrico** - *Product Owner, Desarrollo*
+* **Fernando Soto Lavayen** - *Desarrollo* 
+* **Alexander Mamani Yucra** - *Desarrollo* 
+* **Roxana Quispe Condori** - *Documentacion* 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
